@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    @keyframes xxxhuman-pivot {
+      0% {
+        transform: rotate(9deg);
+      }
+      50% {
+        transform: rotate(9deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .xxx .human-pivot {
+      animation: xxxhuman-pivot 4s infinite;
+    }
+    
+    @keyframes xxxhuman-body {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-12deg);
+      }
+    }
+    
+    .xxx .human-body {
+      animation: xxxhuman-body 4s infinite;
+    }
+    
+    @keyframes xxxhead-pivot {
+      0% {
+        transform: rotate(-12deg);
+      }
+      50% {
+        transform: rotate(-12deg);
+      }
+      100% {
+        transform: rotate(-39deg);
+      }
+    }
+    
+    .xxx .head-pivot {
+      animation: xxxhead-pivot 4s infinite;
+    }
+    
+    @keyframes xxxbiceps-pivotleft {
+      0% {
+        transform: rotate(-6deg);
+      }
+      50% {
+        transform: rotate(24deg);
+      }
+      100% {
+        transform: rotate(15deg);
+      }
+    }
+    
+    .xxx .biceps-pivot.left {
+      animation: xxxbiceps-pivotleft 4s infinite;
+    }
+    
+    @keyframes xxxarm-pivotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      50% {
+        transform: rotate(-45deg);
+      }
+      100% {
+        transform: rotate(-78deg);
+      }
+    }
+    
+    .xxx .arm-pivot.left {
+      animation: xxxarm-pivotleft 4s infinite;
+    }
+    
+    @keyframes xxxbiceps-pivotnotleft {
+      0% {
+        transform: rotate(-12deg);
+      }
+      50% {
+        transform: rotate(-9deg);
+      }
+      100% {
+        transform: rotate(-24deg);
+      }
+    }
+    
+    .xxx .biceps-pivot:not(.left) {
+      animation: xxxbiceps-pivotnotleft 4s infinite;
+    }
+    
+    @keyframes xxxarm-pivotnotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      50% {
+        transform: rotate(-6deg);
+      }
+      100% {
+        transform: rotate(-6deg);
+      }
+    }
+    
+    .xxx .arm-pivot:not(.left) {
+      animation: xxxarm-pivotnotleft 4s infinite;
+    }
+    
+    @keyframes xxxthigh-pivotleft {
+      0% {
+        transform: rotate(6deg);
+      }
+      50% {
+        transform: rotate(9deg);
+      }
+      100% {
+        transform: rotate(-33deg);
+      }
+    }
+    
+    .xxx .thigh-pivot.left {
+      animation: xxxthigh-pivotleft 4s infinite;
+    }
+    
+    @keyframes xxxshin-pivotleft {
+      0% {
+        transform: rotate(12deg);
+      }
+      50% {
+        transform: rotate(6deg);
+      }
+      100% {
+        transform: rotate(6deg);
+      }
+    }
+    
+    .xxx .shin-pivot.left {
+      animation: xxxshin-pivotleft 4s infinite;
+    }
+    
+    @keyframes xxxthigh-pivotnotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(-24deg);
+      }
+      100% {
+        transform: rotate(-60deg);
+      }
+    }
+    
+    .xxx .thigh-pivot:not(.left) {
+      animation: xxxthigh-pivotnotleft 4s infinite;
+    }
+    
+    @keyframes xxxshin-pivotnotleft {
+      0% {
+        transform: rotate(00deg);
+      }
+      50% {
+        transform: rotate(00deg);
+      }
+      100% {
+        transform: rotate(-15deg);
+      }
+    }
+    
+    .xxx .shin-pivot:not(.left) {
+      animation: xxxshin-pivotnotleft 4s infinite;
+    }
+  </style>
+  <style>
+    @keyframes anim1human-pivot {
+      0% {
+        transform: rotate(-3deg);
+      }
+      20% {
+        transform: rotate(-3deg);
+      }
+      40% {
+        transform: rotate(-3deg);
+      }
+      80% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .anim1 .human-pivot {
+      animation: anim1human-pivot 5s infinite;
+    }
+    
+    @keyframes anim1human-body {
+      0% {
+        transform: rotate(3deg);
+      }
+      20% {
+        transform: rotate(3deg);
+      }
+      40% {
+        transform: rotate(3deg);
+      }
+      80% {
+        transform: rotate(3deg);
+      }
+      100% {
+        transform: rotate(3deg);
+      }
+    }
+    
+    .anim1 .human-body {
+      animation: anim1human-body 5s infinite;
+    }
+    
+    @keyframes anim1head-pivot {
+      0% {
+        transform: rotate(3deg);
+      }
+      20% {
+        transform: rotate(12deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      80% {
+        transform: rotate(-12deg);
+      }
+      100% {
+        transform: rotate(3deg);
+      }
+    }
+    
+    .anim1 .head-pivot {
+      animation: anim1head-pivot 5s infinite;
+    }
+    
+    @keyframes anim1biceps-pivotleft {
+      0% {
+        transform: rotate(-72deg);
+      }
+      20% {
+        transform: rotate(-75deg);
+      }
+      40% {
+        transform: rotate(-75deg);
+      }
+      80% {
+        transform: rotate(-75deg);
+      }
+      100% {
+        transform: rotate(-75deg);
+      }
+    }
+    
+    .anim1 .biceps-pivot.left {
+      animation: anim1biceps-pivotleft 5s infinite;
+    }
+    
+    @keyframes anim1arm-pivotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      20% {
+        transform: rotate(-3deg);
+      }
+      40% {
+        transform: rotate(-3deg);
+      }
+      80% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .anim1 .arm-pivot.left {
+      animation: anim1arm-pivotleft 5s infinite;
+    }
+    
+    @keyframes anim1biceps-pivotnotleft {
+      0% {
+        transform: rotate(72deg);
+      }
+      20% {
+        transform: rotate(75deg);
+      }
+      40% {
+        transform: rotate(75deg);
+      }
+      80% {
+        transform: rotate(75deg);
+      }
+      100% {
+        transform: rotate(75deg);
+      }
+    }
+    
+    .anim1 .biceps-pivot:not(.left) {
+      animation: anim1biceps-pivotnotleft 5s infinite;
+    }
+    
+    @keyframes anim1arm-pivotnotleft {
+      0% {
+        transform: rotate(3deg);
+      }
+      20% {
+        transform: rotate(3deg);
+      }
+      40% {
+        transform: rotate(3deg);
+      }
+      80% {
+        transform: rotate(-6deg);
+      }
+      100% {
+        transform: rotate(-6deg);
+      }
+    }
+    
+    .anim1 .arm-pivot:not(.left) {
+      animation: anim1arm-pivotnotleft 5s infinite;
+    }
+    
+    @keyframes anim1thigh-pivotleft {
+      0% {
+        transform: rotate(6deg);
+      }
+      20% {
+        transform: rotate(-6deg);
+      }
+      40% {
+        transform: rotate(-6deg);
+      }
+      80% {
+        transform: rotate(-6deg);
+      }
+      100% {
+        transform: rotate(-6deg);
+      }
+    }
+    
+    .anim1 .thigh-pivot.left {
+      animation: anim1thigh-pivotleft 5s infinite;
+    }
+    
+    @keyframes anim1shin-pivotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      20% {
+        transform: rotate(-3deg);
+      }
+      40% {
+        transform: rotate(-3deg);
+      }
+      80% {
+        transform: rotate(6deg);
+      }
+      100% {
+        transform: rotate(6deg);
+      }
+    }
+    
+    .anim1 .shin-pivot.left {
+      animation: anim1shin-pivotleft 5s infinite;
+    }
+    
+    @keyframes anim1thigh-pivotnotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      20% {
+        transform: rotate(-3deg);
+      }
+      40% {
+        transform: rotate(-3deg);
+      }
+      80% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .anim1 .thigh-pivot:not(.left) {
+      animation: anim1thigh-pivotnotleft 5s infinite;
+    }
+    
+    @keyframes anim1shin-pivotnotleft {
+      0% {
+        transform: rotate(-3deg);
+      }
+      20% {
+        transform: rotate(-3deg);
+      }
+      40% {
+        transform: rotate(-3deg);
+      }
+      80% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .anim1 .shin-pivot:not(.left) {
+      animation: anim1shin-pivotnotleft 5s infinite;
+    }
+  </style>
+  <style>
+    @keyframes anim2human-pivot {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .human-pivot {
+      animation: anim2human-pivot 1s infinite;
+    }
+    
+    @keyframes anim2human-body {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .human-body {
+      animation: anim2human-body 1s infinite;
+    }
+    
+    @keyframes anim2head-pivot {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(-3deg);
+      }
+      100% {
+        transform: rotate(-3deg);
+      }
+    }
+    
+    .anim2 .head-pivot {
+      animation: anim2head-pivot 1s infinite;
+    }
+    
+    @keyframes anim2biceps-pivotleft {
+      0% {
+        transform: rotate(-75deg);
+      }
+      50% {
+        transform: rotate(15deg);
+      }
+      100% {
+        transform: rotate(-66deg);
+      }
+    }
+    
+    .anim2 .biceps-pivot.left {
+      animation: anim2biceps-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim2arm-pivotleft {
+      0% {
+        transform: rotate(-12deg);
+      }
+      50% {
+        transform: rotate(39deg);
+      }
+      100% {
+        transform: rotate(-21deg);
+      }
+    }
+    
+    .anim2 .arm-pivot.left {
+      animation: anim2arm-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim2biceps-pivotnotleft {
+      0% {
+        transform: rotate(75deg);
+      }
+      50% {
+        transform: rotate(-12deg);
+      }
+      100% {
+        transform: rotate(75deg);
+      }
+    }
+    
+    .anim2 .biceps-pivot:not(.left) {
+      animation: anim2biceps-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim2arm-pivotnotleft {
+      0% {
+        transform: rotate(12deg);
+      }
+      50% {
+        transform: rotate(-39deg);
+      }
+      100% {
+        transform: rotate(12deg);
+      }
+    }
+    
+    .anim2 .arm-pivot:not(.left) {
+      animation: anim2arm-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim2thigh-pivotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .thigh-pivot.left {
+      animation: anim2thigh-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim2shin-pivotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .shin-pivot.left {
+      animation: anim2shin-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim2thigh-pivotnotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .thigh-pivot:not(.left) {
+      animation: anim2thigh-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim2shin-pivotnotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim2 .shin-pivot:not(.left) {
+      animation: anim2shin-pivotnotleft 1s infinite;
+    }
+  </style>
+  <style>
+    @keyframes anim3human-pivot {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .human-pivot {
+      animation: anim3human-pivot 1s infinite;
+    }
+    
+    @keyframes anim3human-body {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .human-body {
+      animation: anim3human-body 1s infinite;
+    }
+    
+    @keyframes anim3head-pivot {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(9deg);
+      }
+      50% {
+        transform: rotate(9deg);
+      }
+      60% {
+        transform: rotate(9deg);
+      }
+      70% {
+        transform: rotate(9deg);
+      }
+      100% {
+        transform: rotate(3deg);
+      }
+    }
+    
+    .anim3 .head-pivot {
+      animation: anim3head-pivot 1s infinite;
+    }
+    
+    @keyframes anim3biceps-pivotleft {
+      0% {
+        transform: rotate(-75deg);
+      }
+      40% {
+        transform: rotate(51deg);
+      }
+      50% {
+        transform: rotate(51deg);
+      }
+      60% {
+        transform: rotate(51deg);
+      }
+      70% {
+        transform: rotate(51deg);
+      }
+      100% {
+        transform: rotate(-75deg);
+      }
+    }
+    
+    .anim3 .biceps-pivot.left {
+      animation: anim3biceps-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim3arm-pivotleft {
+      0% {
+        transform: rotate(-12deg);
+      }
+      40% {
+        transform: rotate(81deg);
+      }
+      50% {
+        transform: rotate(60deg);
+      }
+      60% {
+        transform: rotate(84deg);
+      }
+      70% {
+        transform: rotate(51deg);
+      }
+      100% {
+        transform: rotate(-12deg);
+      }
+    }
+    
+    .anim3 .arm-pivot.left {
+      animation: anim3arm-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim3biceps-pivotnotleft {
+      0% {
+        transform: rotate(75deg);
+      }
+      40% {
+        transform: rotate(75deg);
+      }
+      50% {
+        transform: rotate(75deg);
+      }
+      60% {
+        transform: rotate(75deg);
+      }
+      70% {
+        transform: rotate(75deg);
+      }
+      100% {
+        transform: rotate(75deg);
+      }
+    }
+    
+    .anim3 .biceps-pivot:not(.left) {
+      animation: anim3biceps-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim3arm-pivotnotleft {
+      0% {
+        transform: rotate(12deg);
+      }
+      40% {
+        transform: rotate(12deg);
+      }
+      50% {
+        transform: rotate(12deg);
+      }
+      60% {
+        transform: rotate(12deg);
+      }
+      70% {
+        transform: rotate(12deg);
+      }
+      100% {
+        transform: rotate(12deg);
+      }
+    }
+    
+    .anim3 .arm-pivot:not(.left) {
+      animation: anim3arm-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim3thigh-pivotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .thigh-pivot.left {
+      animation: anim3thigh-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim3shin-pivotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .shin-pivot.left {
+      animation: anim3shin-pivotleft 1s infinite;
+    }
+    
+    @keyframes anim3thigh-pivotnotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .thigh-pivot:not(.left) {
+      animation: anim3thigh-pivotnotleft 1s infinite;
+    }
+    
+    @keyframes anim3shin-pivotnotleft {
+      0% {
+        transform: rotate(0deg);
+      }
+      40% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      60% {
+        transform: rotate(0deg);
+      }
+      70% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+    
+    .anim3 .shin-pivot:not(.left) {
+      animation: anim3shin-pivotnotleft 1s infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="anim3">
+    <div class="human-pivot">
+
+      <div class="human-body">
+        <div class="head-pivot">
+          <div class="head"></div>
+        </div>
+
+        <div class="biceps-pivot">
+          <div class="biceps">
+            <div class="arm-pivot">
+              <div class="arm"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="biceps-pivot left">
+          <div class="biceps left">
+            <div class="arm-pivot left">
+              <div class="arm left"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thigh-pivot left">
+          <div class="thigh left">
+            <div class="shin-pivot left">
+              <div class="shin left"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thigh-pivot">
+          <div class="thigh">
+            <div class="shin-pivot">
+              <div class="shin"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

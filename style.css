@@ -1,0 +1,158 @@
+#rotate-controller {
+  position: fixed;
+  width: 40vw;
+  font-size: 1.4rem;
+}
+
+.preview .human-pivot {
+  left: 10vw;
+  top: 0px;
+}
+
+.preview {
+  position: relative;
+  border: 1px solid #444;
+  right: 0px;
+  width: 30vw;
+  height: 60vh;
+  top: 0px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.human-pivot.left {
+  transform: scaleX(-1);
+}
+
+.human-pivot * {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.human-pivot .head-pivot,
+.human-pivot .biceps-pivot,
+.human-pivot .arm-pivot,
+.human-pivot .thigh-pivot,
+.human-pivot .shin-pivot {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+}
+
+.human-pivot {
+  height: 37rem;
+  width: 10rem;
+  position: relative;
+  top: 40px;
+  left: 50vw;
+}
+
+.human-body {
+  top: 10rem;
+  height: 13rem;
+  width: 7rem;
+  background-image: url('./img/morty/body.png');
+}
+
+.head-pivot {
+  top: 2rem;
+  width: 1rem;
+  left: 3.5rem;
+}
+
+.head {
+  z-index: 4;
+  top: -10rem;
+  left: -5rem;
+  height: 10rem;
+  width: 10rem;
+  background-image: url('./img/morty/head.png');
+}
+
+.biceps-pivot {
+  top: 3rem;
+  left: 2rem;
+  height: 1px;
+  width: 1px;
+}
+
+.biceps-pivot:not(.left) {
+  left: initial;
+  right: 2rem;
+}
+
+.biceps {
+  width: 6rem;
+  height: 3rem;
+  top: -1.5rem;
+  left: -6rem;
+  background-image: url('./img/morty/biceps.png');
+}
+
+.biceps:not(.left) {
+  left: initial;
+  right: 0rem;
+  background-image: url('./img/morty/bicepsRight.png');
+}
+
+.arm-pivot {
+  left: 1rem;
+  top: 1.5rem;
+}
+
+.arm-pivot:not(.left) {
+  left: initial;
+  right: 1rem;
+}
+
+.arm {
+  left: -6rem;
+  top: -1.5rem;
+  width: 6rem;
+  height: 3rem;
+  background-image: url('./img/morty/arm.png');
+}
+
+.arm:not(.left) {
+  left: initial;
+  right: 0rem;
+  background-image: url('./img/morty/armRight.png');
+}
+
+.thigh-pivot {
+  left: 2rem;
+  bottom: 0rem;
+}
+
+.thigh-pivot:not(.left) {
+  left: initial;
+  right: 2rem;
+}
+
+.thigh {
+  height: 7rem;
+  width: 3rem;
+  left: -1.5rem;
+  top: 0rem;
+  background-image: url('./img/morty/thigh.png');
+}
+
+.shin:not(.left) {
+  background-image: url('./img/morty/shinRight.png');
+}
+
+.shin-pivot {
+  left: 1.5rem;
+  bottom: 0rem;
+}
+
+.shin {
+  height: 7.8rem;
+  left: -1.7rem;
+  width: 3.4rem;
+  bottom: 0rem;
+  background-image: url('./img/morty/shin.png');
+}

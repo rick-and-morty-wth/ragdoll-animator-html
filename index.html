@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="rotate-controller" onmousemove="focusOnInput(event)">
+
+    <label>
+      Human rotate
+      <input value="0" type="number" step="3" data-pivot=".human-pivot" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      Body rotate
+      <input value="0" type="number" step="3" data-pivot=".human-body" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      Head 
+      <input value="0" type="number" step="3" data-pivot=".head-pivot" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      Biceps left
+      <input value="0" type="number" step="3" data-pivot=".biceps-pivot.left" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      arm-pivot left
+      <input value="0" type="number" step="3" data-pivot=".arm-pivot.left" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      Biceps right
+      <input value="0" type="number" step="3" data-pivot=".biceps-pivot:not(.left)" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      arm-pivot right
+      <input value="0" type="number" step="3" data-pivot=".arm-pivot:not(.left)" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      thigh-pivot left
+      <input value="0" type="number" step="3" data-pivot=".thigh-pivot.left" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      shin-pivot left
+      <input value="0" type="number" step="3" data-pivot=".shin-pivot.left" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      thing right
+      <input value="0" type="number" step="3" data-pivot=".thigh-pivot:not(.left)" onchange="rotatePivot(this)">
+    </label> <br>
+
+    <label>
+      shin-pivot right
+      <input value="0" type="number" step="3" data-pivot=".shin-pivot:not(.left)" onchange="rotatePivot(this)">
+    </label> <br>
+    <hr> Add key: <br>
+    <label>
+      Persent:
+      <input value="0" name="persent" type="number" min="0" max="100">
+    </label>
+    <button onclick="addFrame()">Add frame</button> <br>
+    <button onclick="deleteFrame()" style="background: red">Delete frame</button>
+    <hr>
+    <label>
+      Animation name:
+      <input value="unnamed" type="text" name="name">
+    </label> <br>
+    <label>
+      Animation duration:
+      <input onchange="saveAnimation()" value="1" min="0.01" step="0.01" type="number" name="duration">
+    </label> <br>
+    <button onclick="saveAnimation()">Save animation</button>
+    <hr>
+    <div id="keys">
+    </div>
+    Css animation:
+    <textarea id="css"></textarea>
+  </div>
+  <div class="control">
+    <div class="human-pivot">
+
+      <div class="human-body">
+        <div class="head-pivot">
+          <div class="head"></div>
+        </div>
+
+        <div class="biceps-pivot">
+          <div class="biceps">
+            <div class="arm-pivot">
+              <div class="arm"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="biceps-pivot left">
+          <div class="biceps left">
+            <div class="arm-pivot left">
+              <div class="arm left"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thigh-pivot left">
+          <div class="thigh left">
+            <div class="shin-pivot left">
+              <div class="shin left"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thigh-pivot">
+          <div class="thigh">
+            <div class="shin-pivot">
+              <div class="shin"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <style id="preview-style"></style>
+  <div style="position: fixed; right: 0px; top: 0px;">
+    Preview:
+    <div class="preview">
+      <div class="human-pivot">
+
+        <div class="human-body">
+          <div class="head-pivot">
+            <div class="head"></div>
+          </div>
+
+          <div class="biceps-pivot">
+            <div class="biceps">
+              <div class="arm-pivot">
+                <div class="arm"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="biceps-pivot left">
+            <div class="biceps left">
+              <div class="arm-pivot left">
+                <div class="arm left"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="thigh-pivot left">
+            <div class="thigh left">
+              <div class="shin-pivot left">
+                <div class="shin left"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="thigh-pivot">
+            <div class="thigh">
+              <div class="shin-pivot">
+                <div class="shin"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
